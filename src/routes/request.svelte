@@ -10,6 +10,7 @@
     <div>
       <div class="url" on:click={() => goto('request/pollster')}> 여론조사 기관 등록 요청 </div>
       <div class="url" on:click={() => goto('request/poll')}> 여론조사 등록 및 수정 요청 </div>
+      <div class="url" on:click={() => goto('request/poll-type')}> 선거 등록 </div>
     </div>
   </DefaultSection>
 

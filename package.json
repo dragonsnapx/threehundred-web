@@ -36,6 +36,7 @@
     "node-sass": "^6.0.1",
     "postcss-import": "^14.0.2",
     "sass": "^1.43.3",
+    "svelte-class-transition": "^1.0.4",
     "svelte-material-icons": "^1.0.3"
   }
 }

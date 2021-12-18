@@ -1,15 +1,14 @@
 <script>
+	import HelperText from "./HelperText.svelte";
   export let IconComponent;
   export let placeHolder;
-  export let textHelper;
+  export let helperText;
   export let hasMarginBottom;
 </script>
 
-<div class="text-container  {IconComponent ? 'space-x-4' : ''} {hasMarginBottom ? 'mb-4' : ''}">
-  {#if textHelper}
-    <div class="text-helper">
-      {textHelper}
-    </div>
+<div>
+  {#if helperText}
+    <HelperText helperText={helperText} />
   {/if}
   <div class="text-inner-container">
     {#if IconComponent}
@@ -24,9 +23,7 @@
 </div>
 
 <style lang="scss">
-  .text-container{
-    @apply flex items-baseline flex-col;
-  }
+
   .text-inner-container{
     @apply relative focus:outline-none;
     width: 32rem;
@@ -34,7 +31,5 @@
   .text-input{
     @apply w-full border-2 border-gray-300 bg-white p-3 h-9 rounded-lg hover:border-gray-400 focus:outline-none focus:border-gray-400 focus:shadow-sm cursor-auto focus:ring-transparent;
   }
-  .text-helper{
-    @apply text-gray-600 text-sm mb-2;
-  }
+
 </style>

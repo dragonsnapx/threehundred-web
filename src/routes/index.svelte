@@ -19,6 +19,9 @@ import PollData from "../components/candidates/PollData.svelte";
 
     <DefaultSection title="최근 여론조사">
       <PollData />
+      <PollData />
+      <PollData />
+
     </DefaultSection>
   </div>
 </div>

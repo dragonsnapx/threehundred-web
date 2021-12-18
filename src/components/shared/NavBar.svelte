@@ -16,8 +16,10 @@
           <div class="flex-shrink-0 text-black text-lg mr-8">
             <div class="flex font-bold">Dest </div>
           </div>
-          <div class="hidden md:block">
-            <TextBox IconComponent={Magnify} placeHolder="선거, 정치인 검색하기..." />
+          <div class="search-container space-x-4">
+            <div class="hidden md:block">
+              <TextBox IconComponent={Magnify} placeHolder="선거, 정치인 검색하기..." />
+            </div>
           </div>
         </div>
       </div>
@@ -46,5 +48,9 @@
 
   .profile-menu{
     @apply origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10;
+  }
+
+  .search-container{
+    @apply flex items-baseline flex-col;
   }
 </style>
